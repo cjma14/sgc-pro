@@ -1,0 +1,13 @@
+a:hover {
+	color: white;
+}
+
+.bg-red {
+	color: #fff;
+  	background-color: #a72035 !important;
+}
+
+.navbar-brand.logo-icon {
+	padding: 0px;
+}
+
