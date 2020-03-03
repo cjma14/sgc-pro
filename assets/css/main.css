@@ -4,7 +4,8 @@ a:hover {
 
 .bg-red {
 	color: #fff;
-  	background-color: #a72035 !important;
+  	/*background-color: #f57f17 !important;*/
+  	background-color: #d84315 !important;
 }
 
 .navbar-brand.logo-icon {

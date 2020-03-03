@@ -161,14 +161,14 @@ sup {
 /*change here*/
 
 a {
-  color: #a72035;
+  color: #d84315;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 
 a:hover {
-  color: #7d1828;
+  color: #872a0d;
   text-decoration: underline;
 }
 
@@ -2835,41 +2835,41 @@ fieldset:disabled a.btn {
 
 .btn-blue {
   color: #ffffff;
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
   box-shadow: none;
 }
 
 .btn-blue:hover {
   color: #ffffff;
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
 }
 
 .btn-blue:focus,
 .btn-blue.focus {
-  box-shadow: none, 0 0 0 0.2rem rgba(170, 31, 31, 0.44);
+  box-shadow: none, 0 0 0 0.2rem rgba(170, 70, 31, 0.44);
 }
 
 .btn-blue.disabled,
 .btn-blue:disabled {
   color: #ffffff;
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
 }
 
 .btn-blue:not(:disabled):not(.disabled):active,
 .btn-blue:not(:disabled):not(.disabled).active,
 .show>.btn-blue.dropdown-toggle {
   color: #ffffff;
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
 }
 
 .btn-blue:not(:disabled):not(.disabled):active:focus,
 .btn-blue:not(:disabled):not(.disabled).active:focus,
 .show>.btn-blue.dropdown-toggle:focus {
-  box-shadow: none, 0 0 0 0.2rem rgba(170, 31, 31, 0.44);
+  box-shadow: none, 0 0 0 0.2rem rgba(170, 70, 31, 0.44);
 }
 
 .btn-warning {
@@ -9115,23 +9115,23 @@ a.text-dark:focus {
 
 .btn.btn-blue {
   color: #fff;
-  background-color: #a72035;
-  border-color: #7d1828;
-  box-shadow: 0 2px 2px 0 rgba(170, 31, 31, 0.44), 0 3px 1px -2px rgba(170, 31, 31, 0.44), 0 1px 5px 0 rgba(170, 31, 31, 0.44);
+  background-color: #d84315;
+  border-color: #872a0d;
+  box-shadow: 0 2px 2px 0 rgba(170, 70, 31, 0.44), 0 3px 1px -2px rgba(170, 70, 31, 0.44), 0 1px 5px 0 rgba(170, 70, 31, 0.44);
 }
 
 .btn.btn-blue:hover {
   color: #fff;
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #d84315;
 }
 
 .btn.btn-blue:focus,
 .btn.btn-blue.focus,
 .btn.btn-blue:hover {
   color: #fff;
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #d84315;
 }
 
 .btn.btn-blue:active,
@@ -9139,9 +9139,9 @@ a.text-dark:focus {
 .open>.btn.btn-blue.dropdown-toggle,
 .show>.btn.btn-blue.dropdown-toggle {
   color: #fff;
-  background-color: #a72035;
-  border-color: #7d1828;
-  box-shadow: 0 2px 2px 0 rgba(170, 31, 31, 0.44), 0 3px 1px -2px rgba(170, 31, 31, 0.44), 0 1px 5px 0 rgba(170, 31, 31, 0.44);
+  background-color: #d84315;
+  border-color: #d84315;
+  box-shadow: 0 2px 2px 0 rgba(170, 70, 31, 0.44), 0 3px 1px -2px rgba(170, 70, 31, 0.44), 0 1px 5px 0 rgba(170, 70, 31, 0.44);
 }
 
 .btn.btn-blue:active:hover,
@@ -9157,42 +9157,42 @@ a.text-dark:focus {
 .show>.btn.btn-blue.dropdown-toggle:focus,
 .show>.btn.btn-blue.dropdown-toggle.focus {
   color: #fff;
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
 }
 
 .open>.btn.btn-blue.dropdown-toggle.bmd-btn-icon {
   color: inherit;
-  background-color: #a72035;
+  background-color: #872a0d;
 }
 
 .open>.btn.btn-blue.dropdown-toggle.bmd-btn-icon:hover {
-  background-color: #a72035;
+  background-color: #872a0d;
 }
 
 .btn.btn-blue.disabled:focus,
 .btn.btn-blue.disabled.focus,
 .btn.btn-blue:disabled:focus,
 .btn.btn-blue:disabled.focus {
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
 }
 
 .btn.btn-blue.disabled:hover,
 .btn.btn-blue:disabled:hover {
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
 }
 
 .btn.btn-blue:focus,
 .btn.btn-blue:active,
 .btn.btn-blue:hover {
-  box-shadow: 0 14px 26px -12px rgba(170, 31, 31, 0.44), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(26, 179, 164, 0.34);
+  box-shadow: 0 14px 26px -12px rgba(170, 70, 31, 0.44), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(170, 70, 31, 0.44);
 }
 
 .btn.btn-blue.btn-link {
   background-color: transparent;
-  color: #a72035;
+  color: #872a0d;
   box-shadow: none;
 }
 
@@ -9200,7 +9200,7 @@ a.text-dark:focus {
 .btn.btn-blue.btn-link:focus,
 .btn.btn-blue.btn-link:active {
   background-color: transparent;
-  color: #a72035;
+  color: #872a0d;
 }
 
 .btn.btn-success {
@@ -11168,7 +11168,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
   height: 15px;
   width: 15px;
   border-radius: 100%;
-  background-color: #a72035;
+  background-color: #d84315;
   -webkit-transform: scale3d(0, 0, 0);
   -moz-transform: scale3d(0, 0, 0);
   -o-transform: scale3d(0, 0, 0);
@@ -11338,7 +11338,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 /*change here*/
 .badge.badge-blue {
-  background-color: #a72035;
+  background-color: #d84315;
 }
 
 .badge.badge-default {
@@ -11362,7 +11362,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 /*change here*/
 .badge-blue[href]:hover,
 .badge-blue[href]:focus {
-  background-color: #a72035;
+  background-color: #d84315;
 }
 
 .badge-success[href]:hover,
@@ -11591,7 +11591,7 @@ fieldset[disabled] .is-focused .switch label:focus {
 
 .form-control,
 .is-focused .form-control {
-  background-image: linear-gradient(to top, #a72035 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+  background-image: linear-gradient(to top, #d84315 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
 }
 
 .form-control:invalid {
@@ -11741,7 +11741,7 @@ fieldset[disabled][disabled] .form-control,
 
 .is-focused [class^='bmd-label'],
 .is-focused [class*=' bmd-label'] {
-  color: #a72035;
+  color: #d84315;
 }
 
 .is-focused .bmd-label-placeholder {
@@ -13638,10 +13638,10 @@ fieldset[disabled] .form-group .form-control {
 .pagination>.page-item.active>span,
 .pagination>.page-item.active>span:focus,
 .pagination>.page-item.active>span:hover {
-  background-color: #a72035;
-  border-color: #7d1828;
+  background-color: #d84315;
+  border-color: #872a0d;
   color: #fff;
-  box-shadow: 0 4px 5px 0 rgba(170, 31, 31, 0.44), 0 1px 10px 0 rgba(170, 31, 31, 0.44), 0 2px 4px -1px rgba(170, 31, 31, 0.44);
+  box-shadow: 0 4px 5px 0 rgba(170, 70, 31, 0.44), 0 1px 10px 0 rgba(170, 70, 31, 0.44) 0 2px 4px -1px rgba(170, 70, 31, 0.44);
 }
 
 .pagination.pagination-info>.page-item.active>a,
@@ -13754,16 +13754,16 @@ fieldset[disabled] .form-group .form-control {
 .nav-pills.nav-pills-blue .nav-item .nav-link.active,
 .nav-pills.nav-pills-blue .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-blue .nav-item .nav-link.active:hover {
-  background-color: #a72035;
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 31, 31, 0.44);
+  background-color: #d84315;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 70, 31, 0.44));
   color: #fff;
 }
 
 .nav-pills.nav-pills-rose .nav-item .nav-link.active,
 .nav-pills.nav-pills-rose .nav-item .nav-link.active:focus,
 .nav-pills.nav-pills-rose .nav-item .nav-link.active:hover {
-  background-color: #e91e63;
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4);
+  background-color: #d84315;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 70, 31, 0.44);
   color: #fff;
 }
 
@@ -15148,8 +15148,8 @@ label {
 .dropdown-menu a:hover,
 .dropdown-menu a:focus,
 .dropdown-menu a:active {
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 31, 31, 0.44);
-  background-color: #a72035;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 70, 31, 0.44);
+  background-color: #d84315;
   color: #FFFFFF;
 }
 
@@ -15836,7 +15836,7 @@ thead.thead-inverse th,
 .card.bg-blue,
 .card.card-rotate.bg-blue .front,
 .card.card-rotate.bg-blue .back {
-  background: linear-gradient(60deg, #d72e48, #7d1828);
+  background: linear-gradient(60deg, #e27250, #872a0d);
 }
 
 .card .card-header-success .card-icon,
@@ -18385,8 +18385,7 @@ a .material-icons {
 /*change here*/
 
 .sidebar[data-color="blue"] li.active>a {
-  background-color: #a72035;
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 31, 31, 0.44);
+  color: #d84315 !important;
 }
 
 .sidebar[data-color="green"] li.active>a {
@@ -18870,9 +18869,9 @@ a .material-icons {
 
 .fixed-plugin .btn.btn-blue {
   color: #fff;
-  background-color: #a72035;
-  border-color: #7d1828;
-  box-shadow: 0 2px 2px 0 rgba(170, 31, 31, 0.44), 0 3px 1px -2px rgba(170, 31, 31, 0.44), 0 1px 5px 0 rgba(170, 31, 31, 0.44);
+  background-color: #d84315;
+  border-color: #872a0d;
+  box-shadow: 0 2px 2px 0 rgba(170, 70, 31, 0.44), 0 3px 1px -2px rgba(170, 70, 31, 0.44), 0 1px 5px 0 rgba(170, 70, 31, 0.44);
 }
 
 .fixed-plugin .btn.btn-blue:hover {
@@ -27214,30 +27213,30 @@ be a descendant of the grid when it is being dragged.
 /*change here*/
 
 .card-wizard[data-color="blue"] .moving-tab {
-  background-color: #a72035;
+  background-color: #d84315;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 31, 31, 0.44);
 }
 
 .card-wizard[data-color="blue"] .picture:hover {
-  border-color: #7d1828;
+  border-color: #d84315;
 }
 
 .card-wizard[data-color="blue"] .choice:hover .icon,
 .card-wizard[data-color="blue"] .choice.active .icon {
-  border-color: #7d1828;
-  color: #a72035;
+  border-color: #872a0d;
+  color: #e27250;
 }
 
 .card-wizard[data-color="blue"] .checkbox input[type=checkbox]:checked+.checkbox-material .check {
-  background-color: #a72035;
+  background-color: #d84315;
 }
 
 .card-wizard[data-color="blue"] .radio input[type=radio]:checked~.check {
-  background-color: #a72035;
+  background-color: #d84315;
 }
 
 .card-wizard[data-color="blue"] .radio input[type=radio]:checked~.circle {
-  border-color: #a72035;
+  border-color: #d84315;
 }
 
 .card-wizard[data-color="orange"] .moving-tab {
@@ -28247,7 +28246,7 @@ select.selectpicker {
 /*change here*/
 .bootstrap-select .btn.dropdown-toggle.select-with-transition {
   border: 0 !important;
-  background-image: linear-gradient(to top, #a72035 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
+  background-image: linear-gradient(to top, #d84315 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, #d2d2d2 1px, rgba(210, 210, 210, 0) 1px);
   background-size: 0 100%, 100% 100%;
   background-repeat: no-repeat;
   background-position: bottom, 50% calc(100% - 1px);
