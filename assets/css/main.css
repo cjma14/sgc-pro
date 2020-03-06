@@ -1,3 +1,12 @@
+* {
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
 a:hover {
 	color: white;
 }
@@ -14,4 +23,47 @@ a:hover {
 
 .sidebar[data-background-color="black"] .sidebar-background:after {
   background: #273248;
+}
+
+
+a{
+	color: ;
+}
+
+.wrapper .sidebar-main{
+	position: fixed;
+	width: 260px;
+	height: 100%;
+	background: #273248;
+	padding: 30px 0;
+}
+
+.wrapper .sidebar-main .sidebar-title {
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+
+}
+
+.wrapper .sidebar-main .menu .menu-item {
+	height: 50px;
+	padding: 15px;
+	font-size: 14px;
+	
+}
+
+.wrapper .sidebar-main .menu .menu-item .menu-link {
+	color: #fff;
+	display: block;
+}
+
+.wrapper .sidebar-main .menu .menu-item .menu-link .fa {
+	width: 40px;
+	font-size: 20px;
+}
+
+.wrapper .sidebar-main .menu .menu-item:hover {
+	background: #424c5f;
+	border-left:  5px solid #d84315;
 }
