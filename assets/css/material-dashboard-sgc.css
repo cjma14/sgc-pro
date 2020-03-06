@@ -18385,7 +18385,8 @@ a .material-icons {
 /*change here*/
 
 .sidebar[data-color="blue"] li.active>a {
-  color: #d84315 !important;
+  background-color: #d84315;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(170, 70, 31, 0.44);
 }
 
 .sidebar[data-color="green"] li.active>a {

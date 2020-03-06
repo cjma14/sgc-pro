@@ -30,7 +30,14 @@ a{
 	color: ;
 }
 
-.wrapper .sidebar-main{
+.sidebar[data-color="blue"] li.on>a {
+  	border-left:  5px solid #d84315;
+  	color: #d84315 ;
+  	border-radius: 0px;
+	box-shadow: -139px 11px 97px -35px rgba(216,67,21,0.68);
+}
+
+.sidebar-main{
 	position: fixed;
 	width: 260px;
 	height: 100%;
@@ -38,7 +45,7 @@ a{
 	padding: 30px 0;
 }
 
-.wrapper .sidebar-main .sidebar-title {
+.sidebar-main .sidebar-title {
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
@@ -46,24 +53,20 @@ a{
 
 }
 
-.wrapper .sidebar-main .menu .menu-item {
-	height: 50px;
-	padding: 15px;
-	font-size: 14px;
-	
-}
 
-.wrapper .sidebar-main .menu .menu-item .menu-link {
+
+.sidebar-main .menu li .menu-link {
 	color: #fff;
 	display: block;
 }
 
-.wrapper .sidebar-main .menu .menu-item .menu-link .fa {
+.sidebar-main .menu li .menu-link .fa {
 	width: 40px;
 	font-size: 20px;
 }
 
-.wrapper .sidebar-main .menu .menu-item:hover {
-	background: #424c5f;
-	border-left:  5px solid #d84315;
+.sidebar .nav li:hover > a, .sidebar .nav li .dropdown-menu a:hover, .sidebar .nav li .dropdown-menu a:focus, .sidebar .nav li.active > [data-toggle="collapse"] {
+    background-color: rgba(200, 200, 200, 0.2);
+  	border-left:  5px solid #d84315;
+  	border-radius: 0px;
 }
