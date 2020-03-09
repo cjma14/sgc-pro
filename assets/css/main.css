@@ -11,24 +11,115 @@ a:hover {
 	color: white;
 }
 
+/*=================Navbar=========================*/
+
 .bg-red {
 	color: #fff;
   	/*background-color: #f57f17 !important;*/
   	background-color: #d84315 !important;
 }
 
-.navbar-brand.logo-icon {
-	padding: 0px;
+.text-red {
+	color: #d84315;
 }
 
-.sidebar[data-background-color="black"] .sidebar-background:after {
+.navbar.bg-red .navbar-toggler .icon-bar {
+	background-color: #fff !important;
+}
+
+/*=================EndNavbar=========================*/
+
+/*=================SideBar=========================*/
+
+.sidebar {
+	height: calc(100vh - 70px);
+	top: 70px;
+}
+
+.sidebar .user-info {
+    padding: 13px 15px 12px 15px;
+    white-space: nowrap;
+    position: relative;
+    border-bottom: 1px solid #4e5769;
+    background: url("../img/login.jpg") no-repeat no-repeat;
+    height: 135px; }
+    .sidebar .user-info .image {
+      margin-right: 12px;
+      display: inline-block; }
+      .sidebar .user-info .image img {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        vertical-align: bottom !important; }
+    .sidebar .user-info .info-container {
+      cursor: default;
+      display: block;
+      position: relative;
+      top: 25px; }
+      .sidebar .user-info .info-container .name {
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 14px;
+        max-width: 200px;
+        color: #fff; }
+      .sidebar .user-info .info-container .email {
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 12px;
+        max-width: 200px;
+        color: #fff; }
+      .sidebar .user-info .info-container .user-helper-dropdown {
+        position: absolute;
+        right: -3px;
+        bottom: -12px;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        -ms-box-shadow: none;
+        box-shadow: none;
+        cursor: pointer;
+        color: #fff; }
+
+.sidebar[data-background-color="navy-blue"] .nav .nav-item .nav-link {
+  color: #fff;
+}
+
+.sidebar[data-background-color="navy-blue"] .nav .nav-item i {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar[data-background-color="navy-blue"] .nav .nav-item.active [data-toggle="collapse"],
+.sidebar[data-background-color="navy-blue"] .nav .nav-item:hover [data-toggle="collapse"] {
+  color: #fff;
+}
+
+.sidebar[data-background-color="navy-blue"] .nav .nav-item.active [data-toggle="collapse"] i,
+.sidebar[data-background-color="navy-blue"] .nav .nav-item:hover [data-toggle="collapse"] i {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sidebar[data-background-color="navy-blue"] .user a {
+  color: #fff;
+}
+
+.sidebar[data-background-color="navy-blue"] .simple-text {
+  color: #fff;
+}
+
+.sidebar[data-background-color="navy-blue"] .sidebar-background:after {
   background: #273248;
 }
 
-
-a{
-	color: ;
+.sidebar[data-background-color="navy-blue"] .nav li .dropdown-menu .dropdown-item {
+  color: #fff;
 }
+
 
 .sidebar[data-color="blue"] li.on>a {
   	border-left:  5px solid #d84315;
@@ -53,7 +144,7 @@ a{
 
 }
 
-
+/*=================EndSideBar=========================*/
 
 .sidebar-main .menu li .menu-link {
 	color: #fff;
