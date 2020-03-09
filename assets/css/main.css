@@ -41,7 +41,7 @@ a:hover {
     white-space: nowrap;
     position: relative;
     border-bottom: 1px solid #4e5769;
-    background: url("../img/login.jpg") no-repeat no-repeat;
+    background: url("../img/bg-info.jpg") no-repeat no-repeat;
     height: 135px; }
     .sidebar .user-info .image {
       margin-right: 12px;
@@ -85,6 +85,32 @@ a:hover {
         box-shadow: none;
         cursor: pointer;
         color: #fff; }
+
+      .sidebar .legal {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid #eee;
+      padding: 15px;
+      overflow: hidden; }
+      .sidebar .legal .copyright {
+        font-size: 13px;
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden; }
+        .sidebar .legal .copyright a {
+          font-weight: bold;
+          text-decoration: none; }
+      .sidebar .legal .version {
+        white-space: nowrap;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 5px;
+          font-size: 13px; }
 
 .sidebar[data-background-color="navy-blue"] .nav .nav-item .nav-link {
   color: #fff;
