@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard PRO by Creative Tim
+    Prototipo
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -36,89 +36,689 @@
 </head>
 
 <body class="">
-    <div class="wrapper">
-      <div class="sidebar-main">
-        <h2 class="sidebar-title">Sidebar</h2>
-        <div class="container">
-          <ul class="menu">
-          <li class="menu-item">
-            <a href="#" class="menu-link"><i class="fa fa-home "></i>Home</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link"><i class="fa fa-home "></i>Home</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link"><i class="fa fa-user "></i>Profile</a>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="menu-link"><i class="fa fa-address-card "></i>About</a>
-          </li>
-          <li class="menu-item"><a href="#" class="menu-link">
-            <i class="fa fa-map-pin "></i>Portafolio</a>
-          </li>
-          <li class="nav-item ">
-          <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
-            <i class="material-icons">image</i>
-            <p> Requisitos
-              <b class="caret"></b>
-            </p>
-          </a>
-          <div class="collapse" id="pagesExamples">
-            <ul class="nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="{{route('requisitos.index')}}">
-                  <span class="sidebar-mini"> RQ </span>
-                  <span class="sidebar-normal"> Requisitos </span>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="{{route('parRequisitos.index')}}">
-                  <span class="sidebar-mini"> PR </span>
-                  <span class="sidebar-normal"> Parametrización de Requisitos </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        </ul>
-        </div>
-      </div>
-      <div class="main-panel">
-        <nav class="navbar navbar-expand-lg bg-red">
-          <div class="container">
-            <a class="navbar-brand" href="javascript:;">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
-            <span class="navbar-toggler-bar navbar-kebab"></span>
+  <div class="wrapper">
+    <nav class="navbar navbar-expand-lg bg-red fixed-top ">
+          <div class="container-fluid">
+            <div class="navbar-wrapper">
+              <div class="navbar-minimize">
+                <button id="minimizeSidebar" class="btn btn-just-icon btn-white btn-fab btn-round">
+                  <i class="material-icons text_align-center visible-on-sidebar-regular">more_vert</i>
+                  <i class="material-icons design_bullet-list-67 visible-on-sidebar-mini">view_list</i>
+                </button>
+              </div>
+              <a class="navbar-brand" href="#pablo">Dashboard</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
+              <span class="navbar-toggler-icon icon-bar"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-end">
+              <form class="navbar-form"></form>
               <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="javascript:;">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:;">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="javascript:;">Pricing</a>
-                </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
+                  <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">person</i>
+                    <span>
+                       John Doe
+                    </span>
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="javascript:;">Action</a>
-                      <a class="dropdown-item" href="javascript:;">Another action</a>
-                      <a class="dropdown-item" href="javascript:;">Something else here</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                    <a class="dropdown-item" href="#">Profile</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Log out</a>
                   </div>
                 </li>
               </ul>
             </div>
+          </div>
         </nav>
-      </div>
+    <div class="container-fluid">
+      <div class="sidebar" data-color="blue" data-background-color="navy-blue" {{-- data-image="{{asset("/materialDashboard/assets/img/sidebar-6.jpg")}}" --}}>
+        <div class="sidebar-wrapper">
+          <div class="user-info">
+                <div class="image">
+                    <img src="assets/img/faces/marc.jpg" alt="User" width="48" height="48">
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
+                    <div class="email">john.doe@example.com</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">person</i>Profile</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">group</i>Followers</a></li>
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">shopping_cart</i>Sales</a></li>
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">favorite</i>Likes</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="javascript:void(0);" class=" waves-effect waves-block"><i class="material-icons">input</i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+          <ul class="nav">
+            <li class="nav-item on ">
+              <a class="nav-link" href="../examples/dashboard.html">
+                <i class="material-icons">dashboard</i>
+                <p> Dashboard </p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" data-toggle="collapse" href="#pagesExamples">
+                <i class="material-icons">image</i>
+                <p> Requisitos
+                  <b class="caret"></b>
+                </p>
+              </a>
+              <div class="collapse" id="pagesExamples">
+                <ul class="nav">
+                  <li class="nav-item ">
+                    <a class="nav-link" href="{{route('requisitos.index')}}">
+                      <span class="sidebar-normal"> Requisitos </span>
+                    </a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="{{route('parRequisitos.index')}}">
+                      <span class="sidebar-normal"> Parametrización de Requisitos </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../examples/widgets.html">
+                <i class="material-icons">widgets</i>
+                <p> Widgets </p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../examples/charts.html">
+                <i class="material-icons">timeline</i>
+                <p> Charts </p>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="../examples/calendar.html">
+                <i class="material-icons">date_range</i>
+                <p> Calendar </p>
+              </a>
+            </li>
+          </ul>
+        </div>
     </div>
-  
+    </div>
+      <div class="main-panel">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-header card-header-success card-header-icon">
+                    <div class="card-icon">
+                      <i class="material-icons">assignment</i>
+                    </div>
+                    <h4 class="card-title">DataTables.net</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="toolbar">
+                      <!--        Here you can write extra buttons/actions for the toolbar              -->
+                    </div>
+                    <div class="material-datatables">
+                      <table id="datatables" class="table table-striped table-no-bordered table-hover" cellspacing="0" width="100%" style="width:100%">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Date</th>
+                            <th class="disabled-sorting text-right">Actions</th>
+                          </tr>
+                        </thead>
+                        <tfoot>
+                          <tr>
+                            <th>Name</th>
+                            <th>Position</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th class="text-right">Actions</th>
+                          </tr>
+                        </tfoot>
+                        <tbody>
+                          <tr>
+                            <td>Tiger Nixon</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>61</td>
+                            <td>2011/04/25</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Garrett Winters</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>63</td>
+                            <td>2011/07/25</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Ashton Cox</td>
+                            <td>Junior Technical Author</td>
+                            <td>San Francisco</td>
+                            <td>66</td>
+                            <td>2009/01/12</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Cedric Kelly</td>
+                            <td>Senior Javascript Developer</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2012/03/29</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Airi Satou</td>
+                            <td>Accountant</td>
+                            <td>Tokyo</td>
+                            <td>33</td>
+                            <td>2008/11/28</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Brielle Williamson</td>
+                            <td>Integration Specialist</td>
+                            <td>New York</td>
+                            <td>61</td>
+                            <td>2012/12/02</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Herrod Chandler</td>
+                            <td>Sales Assistant</td>
+                            <td>San Francisco</td>
+                            <td>59</td>
+                            <td>2012/08/06</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Rhona Davidson</td>
+                            <td>Integration Specialist</td>
+                            <td>Tokyo</td>
+                            <td>55</td>
+                            <td>2010/10/14</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Colleen Hurst</td>
+                            <td>Javascript Developer</td>
+                            <td>San Francisco</td>
+                            <td>39</td>
+                            <td>2009/09/15</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Sonya Frost</td>
+                            <td>Software Engineer</td>
+                            <td>Edinburgh</td>
+                            <td>23</td>
+                            <td>2008/12/13</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Jena Gaines</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>30</td>
+                            <td>2008/12/19</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Quinn Flynn</td>
+                            <td>Support Lead</td>
+                            <td>Edinburgh</td>
+                            <td>22</td>
+                            <td>2013/03/03</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Charde Marshall</td>
+                            <td>Regional Director</td>
+                            <td>San Francisco</td>
+                            <td>36</td>
+                            <td>2008/10/16</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Haley Kennedy</td>
+                            <td>Senior Marketing Designer</td>
+                            <td>London</td>
+                            <td>43</td>
+                            <td>2012/12/18</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Tatyana Fitzpatrick</td>
+                            <td>Regional Director</td>
+                            <td>London</td>
+                            <td>19</td>
+                            <td>2010/03/17</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Michael Silva</td>
+                            <td>Marketing Designer</td>
+                            <td>London</td>
+                            <td>66</td>
+                            <td>2012/11/27</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Paul Byrd</td>
+                            <td>Chief Financial Officer (CFO)</td>
+                            <td>New York</td>
+                            <td>64</td>
+                            <td>2010/06/09</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Gloria Little</td>
+                            <td>Systems Administrator</td>
+                            <td>New York</td>
+                            <td>59</td>
+                            <td>2009/04/10</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Bradley Greer</td>
+                            <td>Software Engineer</td>
+                            <td>London</td>
+                            <td>41</td>
+                            <td>2012/10/13</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Dai Rios</td>
+                            <td>Personnel Lead</td>
+                            <td>Edinburgh</td>
+                            <td>35</td>
+                            <td>2012/09/26</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Jenette Caldwell</td>
+                            <td>Development Lead</td>
+                            <td>New York</td>
+                            <td>30</td>
+                            <td>2011/09/03</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Yuri Berry</td>
+                            <td>Chief Marketing Officer (CMO)</td>
+                            <td>New York</td>
+                            <td>40</td>
+                            <td>2009/06/25</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Caesar Vance</td>
+                            <td>Pre-Sales Support</td>
+                            <td>New York</td>
+                            <td>21</td>
+                            <td>2011/12/12</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Doris Wilder</td>
+                            <td>Sales Assistant</td>
+                            <td>Sidney</td>
+                            <td>23</td>
+                            <td>2010/09/20</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Angelica Ramos</td>
+                            <td>Chief Executive Officer (CEO)</td>
+                            <td>London</td>
+                            <td>47</td>
+                            <td>2009/10/09</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Gavin Joyce</td>
+                            <td>Developer</td>
+                            <td>Edinburgh</td>
+                            <td>42</td>
+                            <td>2010/12/22</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Jennifer Chang</td>
+                            <td>Regional Director</td>
+                            <td>Singapore</td>
+                            <td>28</td>
+                            <td>2010/11/14</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Brenden Wagner</td>
+                            <td>Software Engineer</td>
+                            <td>San Francisco</td>
+                            <td>28</td>
+                            <td>2011/06/07</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Fiona Green</td>
+                            <td>Chief Operating Officer (COO)</td>
+                            <td>San Francisco</td>
+                            <td>48</td>
+                            <td>2010/03/11</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Shou Itou</td>
+                            <td>Regional Marketing</td>
+                            <td>Tokyo</td>
+                            <td>20</td>
+                            <td>2011/08/14</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Michelle House</td>
+                            <td>Integration Specialist</td>
+                            <td>Sidney</td>
+                            <td>37</td>
+                            <td>2011/06/02</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Suki Burks</td>
+                            <td>Developer</td>
+                            <td>London</td>
+                            <td>53</td>
+                            <td>2009/10/22</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Prescott Bartlett</td>
+                            <td>Technical Author</td>
+                            <td>London</td>
+                            <td>27</td>
+                            <td>2011/05/07</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Gavin Cortez</td>
+                            <td>Team Leader</td>
+                            <td>San Francisco</td>
+                            <td>22</td>
+                            <td>2008/10/26</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Martena Mccray</td>
+                            <td>Post-Sales support</td>
+                            <td>Edinburgh</td>
+                            <td>46</td>
+                            <td>2011/03/09</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Unity Butler</td>
+                            <td>Marketing Designer</td>
+                            <td>San Francisco</td>
+                            <td>47</td>
+                            <td>2009/12/09</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Howard Hatfield</td>
+                            <td>Office Manager</td>
+                            <td>San Francisco</td>
+                            <td>51</td>
+                            <td>2008/12/16</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Hope Fuentes</td>
+                            <td>Secretary</td>
+                            <td>San Francisco</td>
+                            <td>41</td>
+                            <td>2010/02/12</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Vivian Harrell</td>
+                            <td>Financial Controller</td>
+                            <td>San Francisco</td>
+                            <td>62</td>
+                            <td>2009/02/14</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Timothy Mooney</td>
+                            <td>Office Manager</td>
+                            <td>London</td>
+                            <td>37</td>
+                            <td>2008/12/11</td>
+                            <td class="text-right">
+                              <a href="#" class="btn btn-link btn-info btn-just-icon like"><i class="material-icons">favorite</i></a>
+                              <a href="#" class="btn btn-link btn-warning btn-just-icon edit"><i class="material-icons">dvr</i></a>
+                              <a href="#" class="btn btn-link btn-danger btn-just-icon remove"><i class="material-icons">close</i></a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <!-- end content-->
+                </div>
+                <!--  end card  -->
+              </div>
+            <!-- end col-md-12 -->
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container-fluid">
+            <nav class="float-left">
+              <ul>
+                <li>
+                  <a href="https://www.creative-tim.com">
+                    Creative Tim
+                  </a>
+                </li>
+                <li>
+                  <a href="https://creative-tim.com/presentation">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="http://blog.creative-tim.com">
+                    Blog
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.creative-tim.com/license">
+                    Licenses
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="copyright float-right">
+              ©
+              <script>
+                document.write(new Date().getFullYear())
+              </script>2020, made with <i class="material-icons">favorite</i> by
+              <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+            </div>
+          </div>
+        </footer>
+      </div>
+  </div>
+
               <!--   Core JS Files   -->
               <script src="assets/js/core/jquery.min.js"></script>
               <script src="assets/js/core/popper.min.js"></script>
@@ -342,6 +942,44 @@
 
                 });
               </script>
+
+  <script>
+    $(document).ready(function() {
+      $('#datatables').DataTable({
+        "pagingType": "full_numbers",
+        "lengthMenu": [
+          [10, 25, 50, -1],
+          [10, 25, 50, "All"]
+        ],
+        responsive: true,
+        language: {
+          search: "_INPUT_",
+          searchPlaceholder: "Search records",
+        }
+      });
+
+      var table = $('#datatable').DataTable();
+
+      // Edit record
+      table.on('click', '.edit', function() {
+        $tr = $(this).closest('tr');
+        var data = table.row($tr).data();
+        alert('You press on Row: ' + data[0] + ' ' + data[1] + ' ' + data[2] + '\'s row.');
+      });
+
+      // Delete a record
+      table.on('click', '.remove', function(e) {
+        $tr = $(this).closest('tr');
+        table.row($tr).remove().draw();
+        e.preventDefault();
+      });
+
+      //Like record
+      table.on('click', '.like', function() {
+        alert('You clicked on Like button');
+      });
+    });
+  </script>
 </body>
 
 </html>
