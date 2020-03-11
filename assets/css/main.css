@@ -16,11 +16,11 @@ a:hover {
 .bg-red {
 	color: #fff;
   	/*background-color: #f57f17 !important;*/
-  	background-color: #d84315 !important;
+  	background-color: #b71c1c !important;
 }
 
 .text-red {
-	color: #d84315;
+	color: #b71c1c;
 }
 
 .navbar.bg-red .navbar-toggler .icon-bar {
@@ -32,8 +32,8 @@ a:hover {
 /*=================SideBar=========================*/
 
 .sidebar {
-	height: calc(100vh - 70px);
-	top: 70px;
+	/*height: calc(100vh - 70px);
+	top: 70px;*/
 }
 
 .sidebar .user-info {
@@ -42,10 +42,10 @@ a:hover {
     position: relative;
     border-bottom: 1px solid #4e5769;
     background: url("../img/bg-info.jpg") no-repeat no-repeat;
-    height: 135px; }
+    height: 70px; }
     .sidebar .user-info .image {
       margin-right: 12px;
-      display: inline-block; }
+      display: inline-flex; }
       .sidebar .user-info .image img {
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
@@ -54,9 +54,9 @@ a:hover {
         vertical-align: bottom !important; }
     .sidebar .user-info .info-container {
       cursor: default;
-      display: block;
+      display: inline-block;
       position: relative;
-      top: 25px; }
+      top: 0px; }
       .sidebar .user-info .info-container .name {
         white-space: nowrap;
         -ms-text-overflow: ellipsis;
@@ -77,7 +77,7 @@ a:hover {
         color: #fff; }
       .sidebar .user-info .info-container .user-helper-dropdown {
         position: absolute;
-        right: -3px;
+        right: -25px;
         bottom: -12px;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
@@ -112,53 +112,64 @@ a:hover {
         margin-top: 5px;
           font-size: 13px; }
 
+      .sidebar .nav .header {
+        background: #eee;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 8px 16px;
+
+      }
+
 .sidebar[data-background-color="navy-blue"] .nav .nav-item .nav-link {
-  color: #fff;
+  color: #384750;
 }
 
 .sidebar[data-background-color="navy-blue"] .nav .nav-item i {
-  color: rgba(255, 255, 255, 0.8);
+  color: #384750;
 }
 
 .sidebar[data-background-color="navy-blue"] .nav .nav-item.active [data-toggle="collapse"],
 .sidebar[data-background-color="navy-blue"] .nav .nav-item:hover [data-toggle="collapse"] {
-  color: #fff;
+  color: #384750;
 }
 
 .sidebar[data-background-color="navy-blue"] .nav .nav-item.active [data-toggle="collapse"] i,
 .sidebar[data-background-color="navy-blue"] .nav .nav-item:hover [data-toggle="collapse"] i {
-  color: rgba(255, 255, 255, 0.8);
+  color: #384750;
 }
 
 .sidebar[data-background-color="navy-blue"] .user a {
-  color: #fff;
+  color: #384750;
 }
 
 .sidebar[data-background-color="navy-blue"] .simple-text {
-  color: #fff;
+  color: #384750;
 }
 
 .sidebar[data-background-color="navy-blue"] .sidebar-background:after {
-  background: #273248;
+  background: #fff;
 }
 
 .sidebar[data-background-color="navy-blue"] .nav li .dropdown-menu .dropdown-item {
-  color: #fff;
+  color: #384750;
 }
 
 
-.sidebar[data-color="blue"] li.on>a {
-  	border-left:  5px solid #d84315;
-  	color: #d84315 ;
+.sidebar[data-color="blue"] li.on>a{
+  	border-left:  5px solid #b71c1c;
+    background-color: #f3f3f3;
   	border-radius: 0px;
-	box-shadow: -139px 11px 97px -35px rgba(216,67,21,0.68);
+	  box-shadow: -139px 11px 97px -35px rgba(137, 21, 21, 0.44);
+}
+.sidebar[data-color="blue"] li.on>a i{
+  color: #b71c1c !important ;
 }
 
 .sidebar-main{
 	position: fixed;
 	width: 260px;
 	height: 100%;
-	background: #273248;
+	background: #fff;
 	padding: 30px 0;
 }
 
@@ -184,6 +195,6 @@ a:hover {
 
 .sidebar .nav li:hover > a, .sidebar .nav li .dropdown-menu a:hover, .sidebar .nav li .dropdown-menu a:focus, .sidebar .nav li.active > [data-toggle="collapse"] {
     background-color: rgba(200, 200, 200, 0.2);
-  	border-left:  5px solid #d84315;
+  	border-left:  5px solid #b71c1c;
   	border-radius: 0px;
 }
