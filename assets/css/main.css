@@ -32,8 +32,8 @@ a:hover {
 /*=================SideBar=========================*/
 
 .sidebar {
-	/*height: calc(100vh - 70px);
-	top: 70px;*/
+	height: calc(100vh - 70px);
+	top: 70px;
 }
 
 .sidebar .user-info {
