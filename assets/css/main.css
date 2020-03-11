@@ -16,11 +16,11 @@ a:hover {
 .bg-red {
 	color: #fff;
   	/*background-color: #f57f17 !important;*/
-  	background-color: #b71c1c !important;
+  	background-color: #5e35b1 !important;
 }
 
 .text-red {
-	color: #b71c1c;
+	color: #5e35b1;
 }
 
 .navbar.bg-red .navbar-toggler .icon-bar {
@@ -156,13 +156,13 @@ a:hover {
 
 
 .sidebar[data-color="blue"] li.on>a{
-  	border-left:  5px solid #b71c1c;
+  	border-left:  5px solid #5e35b1;
     background-color: #f3f3f3;
   	border-radius: 0px;
 	  box-shadow: -139px 11px 97px -35px rgba(137, 21, 21, 0.44);
 }
 .sidebar[data-color="blue"] li.on>a i{
-  color: #b71c1c !important ;
+  color: #5e35b1 !important ;
 }
 
 .sidebar-main{
