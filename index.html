@@ -165,7 +165,7 @@
                   <div class="card-body">
                     <div class="toolbar">
                       <div class="btn-group">
-                      	<button class="btn btn-success btn-link">
+                      	<button class="btn btn-success btn-link" data-toggle="modal" data-target="#noticeModal">
                       	<strong>
                       		<i class="material-icons">note_add</i>Añadir Trámite
                       	</strong>
@@ -733,6 +733,46 @@
           </div>
         </footer>
       </div>
+  </div>
+
+  <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-signup">
+      <div class="modal-content">
+      	<div class="card card-signup card-plain">
+      		<div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel">¿Que tipo de tramite desea crear?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            <i class="material-icons">close</i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="instruction">
+            <div class="row">
+            	<div class="col-md-6">
+            		<div class="card">
+					  <img class="card-img-top" src="assets/img/modal-1.jpg" alt="Card image cap">
+					  <div class="card-body">
+					    <h4 class="text-center">Crear Trámite desde Cero</h4>
+					  </div>
+					</div>
+            	</div>
+            	<div class="col-md-6">
+            		<div class="card">
+					  <img class="card-img-top" src="assets/img/modal-2.jpg" alt="Card image cap" height="270px">
+					  <div class="card-body">
+					    <h4 class="text-center">Crear Trámite a partir de uno ya existente</h4>
+					  </div>
+					</div>
+            	</div>
+            </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-success btn-round" data-dismiss="modal">Terminado</button>
+        </div>
+      </div>
+      	</div>
+        
+    </div>
   </div>
 
               <!--   Core JS Files   -->
