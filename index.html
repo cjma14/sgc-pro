@@ -155,7 +155,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12">
-                <div class="card">
+                <div class="card card-plain">
                   <div class="card-header card-header-success card-header-icon">
                     <div class="card-icon">
                       <i class="material-icons">assignment</i>
@@ -163,18 +163,18 @@
                     <h4 class="card-title">DataTables.net</h4>
                   </div>
                   <div class="card-body">
-                    <div class="toolbar">
-                      <div class="btn-group">
-                      	<button class="btn btn-success btn-link">
-                      	<strong>
-                      		<i class="material-icons">note_add</i>Añadir Trámite
-                      	</strong>
-                  	  </button>
-                  	  <button class="btn btn-danger btn-link">
-                      	<strong>
-                      		<i class="material-icons">picture_as_pdf</i>Generar PDF
-                      	</strong>
-                  	   </button>
+                    <div class="toolbar text-center">
+                      <div class="">
+                      	<button class="btn btn-just-icon bg-success" id="example" data-toggle="tooltip" data-placement="top" onclick="md.showNotification('bottom','right')" title="Añadir Un Trámite">
+                      		<i class="material-icons">note_add</i>
+                  	  	</button>
+                  	  	<button class="btn btn-just-icon bg-danger" data-toggle="tooltip" data-placement="top" title="Generar Un PDF">
+                      		<i class="material-icons">picture_as_pdf</i>
+                  	  	</button>
+                  	  	<button class="btn btn-just-icon btn-warning edit" data-toggle="tooltip" data-placement="top" title="Generar Un Ecxel">
+                      		<i class="material-icons">content_paste</i>
+                  	  	</button>
+                  	
                       </div>
                     </div>
                     <div class="material-datatables">
@@ -990,6 +990,12 @@
         alert('You clicked on Like button');
       });
     });
+
+    $(function () {
+ 		$('[data-toggle="tooltip"]').tooltip()
+	})
+
+
   </script>
 </body>
 
